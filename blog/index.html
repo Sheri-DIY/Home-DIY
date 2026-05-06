@@ -34,9 +34,7 @@
       --border: #E0D9D1;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'Jost', sans-serif;
@@ -47,9 +45,7 @@
       overflow-x: hidden;
     }
 
-    a {
-      text-decoration: none;
-    }
+    a { text-decoration: none; }
 
     nav {
       position: sticky;
@@ -68,7 +64,6 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      text-decoration: none;
     }
 
     .nav-logo-mark {
@@ -116,9 +111,7 @@
       font-weight: 500 !important;
     }
 
-    .nav-quiz:hover {
-      background: #b5705f;
-    }
+    .nav-quiz:hover { background: #b5705f; }
 
     .nav-cta {
       background: var(--deep-sage);
@@ -128,9 +121,7 @@
       font-weight: 500 !important;
     }
 
-    .nav-cta:hover {
-      background: var(--sage);
-    }
+    .nav-cta:hover { background: var(--sage); }
 
     .hero {
       background: linear-gradient(135deg, rgba(61,82,64,0.92), rgba(107,127,110,0.88));
@@ -499,9 +490,7 @@
       transition: color 0.2s;
     }
 
-    .footer-col ul a:hover {
-      color: var(--cream);
-    }
+    .footer-col ul a:hover { color: var(--cream); }
 
     .footer-bottom {
       display: flex;
@@ -553,13 +542,9 @@
     }
 
     @media (max-width: 900px) {
-      nav {
-        padding: 0 24px;
-      }
+      nav { padding: 0 24px; }
 
-      .nav-links {
-        display: none;
-      }
+      .nav-links { display: none; }
 
       .hero,
       .featured,
@@ -581,17 +566,11 @@
         grid-template-columns: 1fr;
       }
 
-      .section-header {
-        display: block;
-      }
+      .section-header { display: block; }
 
-      .section-header p {
-        margin-top: 14px;
-      }
+      .section-header p { margin-top: 14px; }
 
-      .footer-top {
-        gap: 32px;
-      }
+      .footer-top { gap: 32px; }
 
       .footer-bottom {
         flex-direction: column;
@@ -601,9 +580,7 @@
     }
 
     @media (max-width: 700px) {
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
+      .blog-grid { grid-template-columns: 1fr; }
 
       .hero-buttons {
         flex-direction: column;
@@ -627,6 +604,7 @@
       <li><a href="/work-with-me">Work With Me</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
       <li><a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000" class="nav-quiz">Take the Quiz</a></li>
       <li><a href="https://sheriwalker-accentwallworkshop.netlify.app/" class="nav-cta">Workshop →</a></li>
     </ul>
@@ -637,7 +615,7 @@
       <span class="section-eyebrow">Sheri's DIY Blog</span>
       <h1>Helpful home projects, simple tips, and <em>real-life DIY confidence</em>.</h1>
       <p>
-        Browse Sheri’s practical articles for busy women who want to make progress in their home
+        Browse Sheri's practical articles for busy women who want to make progress in their home
         without turning every project into a full-time job.
       </p>
       <div class="hero-buttons">
@@ -649,26 +627,39 @@
 
   <section class="featured">
     <div class="featured-grid">
-      <a class="featured-main" href="https://www.sheriwalker.ca/post/how-to-hang-wall-art-without-the-stress-simple-guide-for-busy-women">
+      <a class="featured-main" href="/blog/how-my-fixer-upper-house-fixed-me">
         <div class="featured-main-image">
           <img
-            src="https://static.wixstatic.com/media/d82b14_df83b84406c54da494e97db8166d1c80~mv2.png/v1/fill/w_474,h_474,fp_0.50_0.50,q_95,enc_avif,quality_auto/d82b14_df83b84406c54da494e97db8166d1c80~mv2.webp"
-            alt="How to Hang Wall Art"
+            src="https://static.wixstatic.com/media/682593_2117cbd60ec6486196612c318ae3602a~mv2.jpg"
+            alt="How My Fixer-Upper House Fixed Me"
           />
         </div>
         <div class="featured-main-body">
-          <span class="meta-label">Featured Post</span>
-          <h2>How to Hang Wall Art Without the Stress</h2>
+          <span class="meta-label">Personal Story</span>
+          <h2>How My Fixer-Upper House Fixed Me</h2>
           <p>
-            A simple guide for busy women who want their space to feel pulled together without
-            overthinking measurements, tools, and placement.
+            The unexpected story of how buying a run-down house gave me skills, confidence,
+            and a whole new sense of what I'm capable of.
           </p>
           <span class="btn-card">Read Article →</span>
         </div>
       </a>
 
       <div class="mini-stack">
-        <a class="mini-card" href="https://www.sheriwalker.ca/post/must-have-tools-for-a-beginner-diy-home-makeover-under-100">
+        <a class="mini-card" href="/blog/how-to-hang-wall-art-without-the-stress">
+          <img
+            src="https://static.wixstatic.com/media/d82b14_df83b84406c54da494e97db8166d1c80~mv2.png/v1/fill/w_474,h_474,fp_0.50_0.50,q_95,enc_avif,quality_auto/d82b14_df83b84406c54da494e97db8166d1c80~mv2.webp"
+            alt="How to Hang Wall Art"
+          />
+          <div class="mini-card-body">
+            <span class="meta-label">Most Recent</span>
+            <h3>How to Hang Wall Art Without the Stress</h3>
+            <p>Simple guide for styling your walls with more confidence.</p>
+            <span class="btn-card">Read Article →</span>
+          </div>
+        </a>
+
+        <a class="mini-card" href="/blog/must-have-tools-for-a-beginner-diy-home-makeover-under-100">
           <img
             src="https://static.wixstatic.com/media/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg"
             alt="Must-Have DIY Tools"
@@ -680,19 +671,6 @@
             <span class="btn-card">Read Article →</span>
           </div>
         </a>
-
-        <a class="mini-card" href="https://www.sheriwalker.ca/post/how-to-create-a-stunning-feature-wall-in-your-living-room">
-          <img
-            src="https://static.wixstatic.com/media/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg"
-            alt="Feature Wall"
-          />
-          <div class="mini-card-body">
-            <span class="meta-label">Fan Favourite</span>
-            <h3>How to Create a Stunning Feature Wall in Your Living Room</h3>
-            <p>A bold DIY update that can completely change a room.</p>
-            <span class="btn-card">Read Article →</span>
-          </div>
-        </a>
       </div>
     </div>
   </section>
@@ -700,17 +678,30 @@
   <section class="all-posts">
     <div class="section-header">
       <div>
-        <span class="section-eyebrow">More to Explore</span>
-        <h2>Browse Sheri’s DIY resources</h2>
+        <span class="section-eyebrow">All Posts</span>
+        <h2>Browse all DIY articles</h2>
       </div>
       <p>
-        This page can keep growing as you migrate more posts over. For now, it gives the site a real
-        blog destination instead of sending people back into a one-page scroll.
+        Practical guides, project walkthroughs, and real-talk advice for women who want to
+        feel at home in their own space.
       </p>
     </div>
 
     <div class="blog-grid">
-      <a href="https://www.sheriwalker.ca/post/how-to-hang-wall-art-without-the-stress-simple-guide-for-busy-women" class="blog-card">
+      <a href="/blog/how-my-fixer-upper-house-fixed-me" class="blog-card">
+        <img
+          src="https://static.wixstatic.com/media/682593_2117cbd60ec6486196612c318ae3602a~mv2.jpg"
+          alt="How My Fixer-Upper House Fixed Me"
+        />
+        <div class="blog-card-body">
+          <span class="meta-label">Personal Story</span>
+          <h3>How My Fixer-Upper House Fixed Me</h3>
+          <p>How buying a run-down house changed everything about the way I see myself.</p>
+          <span class="btn-card">Read Article →</span>
+        </div>
+      </a>
+
+      <a href="/blog/how-to-hang-wall-art-without-the-stress" class="blog-card">
         <img
           src="https://static.wixstatic.com/media/d82b14_df83b84406c54da494e97db8166d1c80~mv2.png/v1/fill/w_474,h_474,fp_0.50_0.50,q_95,enc_avif,quality_auto/d82b14_df83b84406c54da494e97db8166d1c80~mv2.webp"
           alt="How to Hang Wall Art"
@@ -723,7 +714,7 @@
         </div>
       </a>
 
-      <a href="https://www.sheriwalker.ca/post/must-have-tools-for-a-beginner-diy-home-makeover-under-100" class="blog-card">
+      <a href="/blog/must-have-tools-for-a-beginner-diy-home-makeover-under-100" class="blog-card">
         <img
           src="https://static.wixstatic.com/media/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg"
           alt="Must-Have DIY Tools"
@@ -736,7 +727,7 @@
         </div>
       </a>
 
-      <a href="https://www.sheriwalker.ca/post/how-to-create-a-stunning-feature-wall-in-your-living-room" class="blog-card">
+      <a href="/blog/how-to-create-a-stunning-feature-wall-in-your-living-room" class="blog-card">
         <img
           src="https://static.wixstatic.com/media/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg"
           alt="Feature Wall"
@@ -755,7 +746,7 @@
     <span class="section-eyebrow">Need a starting point?</span>
     <h2>Take the DIY Quiz and get matched to your best first project.</h2>
     <p>
-      If you’re not sure what to start with first, Sheri’s quiz helps point you toward a project
+      If you're not sure what to start with first, Sheri's quiz helps point you toward a project
       that fits your personality and confidence level.
     </p>
     <a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000" class="btn-primary">Take the Quiz</a>
@@ -780,6 +771,7 @@
           <li><a href="/work-with-me">Work With Me</a></li>
           <li><a href="/about">Meet Sheri</a></li>
           <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
 
@@ -788,7 +780,6 @@
         <ul>
           <li><a href="https://sheriwalker-accentwallworkshop.netlify.app/">Accent Wall Workshop</a></li>
           <li><a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000">Take the Quiz</a></li>
-          <li><a href="/">Back to Home</a></li>
         </ul>
       </div>
     </div>
