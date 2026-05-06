@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const wixRes = await fetch('https://www.wixapis.com/v3/posts', {
+    const wixRes = await fetch('https://www.wixapis.com/blog/v3/posts?sort=publishedDate:desc&limit=20', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${apiKey}`,
