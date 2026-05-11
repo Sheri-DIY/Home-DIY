@@ -17,12 +17,12 @@ export default async function handler(req, res) {
   }
 
   try {
-    const wixRes = await fetch('https://www.wixapis.com/blog/v3/posts?sort=publishedDate:desc&limit=20', {
+    const wixRes = await fetch('https://www.wixapis.com/v3/posts', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'wix-site-id': siteId,
-        'Content-Type': 'application/json',
+        Accept: 'application/json',
       },
     });
 
