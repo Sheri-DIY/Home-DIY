@@ -14,11 +14,7 @@
   />
 
   <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --cream: #F7F3EE;
@@ -60,18 +56,8 @@
       height: 72px;
     }
 
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .nav-logo-mark {
-      width: 56px;
-      height: 56px;
-      object-fit: contain;
-      display: block;
-    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo-mark { width: 56px; height: 56px; object-fit: contain; display: block; }
 
     .nav-logo-text {
       font-family: 'Cormorant Garamond', serif;
@@ -99,9 +85,7 @@
     }
 
     .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--deep-sage);
-    }
+    .nav-links a.active { color: var(--deep-sage); }
 
     .nav-quiz {
       background: var(--dusty-rose);
@@ -111,7 +95,7 @@
       font-weight: 500 !important;
     }
 
-    .nav-quiz:hover { background: #b5705f; }
+    .nav-quiz:hover { background: #b5705f !important; }
 
     .nav-cta {
       background: var(--deep-sage);
@@ -121,8 +105,9 @@
       font-weight: 500 !important;
     }
 
-    .nav-cta:hover { background: var(--sage); }
+    .nav-cta:hover { background: var(--sage) !important; }
 
+    /* ── Hero ── */
     .hero {
       background: linear-gradient(135deg, rgba(61,82,64,0.92), rgba(107,127,110,0.88));
       padding: 92px 72px 84px;
@@ -141,11 +126,7 @@
       border-radius: 50%;
     }
 
-    .hero-inner {
-      position: relative;
-      z-index: 2;
-      max-width: 820px;
-    }
+    .hero-inner { position: relative; z-index: 2; max-width: 820px; }
 
     .section-eyebrow {
       font-size: 11px;
@@ -166,10 +147,7 @@
       margin-bottom: 22px;
     }
 
-    .hero h1 em {
-      font-style: italic;
-      color: var(--blush);
-    }
+    .hero h1 em { font-style: italic; color: var(--blush); }
 
     .hero p {
       max-width: 650px;
@@ -179,11 +157,7 @@
       margin-bottom: 34px;
     }
 
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; }
 
     .btn-primary {
       background: var(--dusty-rose);
@@ -198,10 +172,7 @@
       transition: background 0.2s, transform 0.2s;
     }
 
-    .btn-primary:hover {
-      background: #b5705f;
-      transform: translateY(-1px);
-    }
+    .btn-primary:hover { background: #b5705f; transform: translateY(-1px); }
 
     .btn-secondary {
       background: transparent;
@@ -217,144 +188,23 @@
       transition: border-color 0.2s, background 0.2s;
     }
 
-    .btn-secondary:hover {
-      border-color: var(--cream);
-      background: rgba(255,255,255,0.06);
-    }
+    .btn-secondary:hover { border-color: var(--cream); background: rgba(255,255,255,0.06); }
 
-    .featured {
-      padding: 88px 72px 34px;
+    /* ── Archive ── */
+    .archive {
+      padding: 72px 72px 88px;
       background: var(--warm-white);
     }
 
-    .featured-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .featured-main {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 420px;
-    }
-
-    .featured-main-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .featured-main-body {
-      padding: 42px 38px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .meta-label {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--dusty-rose);
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .featured-main-body h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(30px, 3vw, 42px);
-      font-weight: 400;
-      line-height: 1.15;
-      color: var(--charcoal);
-      margin-bottom: 16px;
-    }
-
-    .featured-main-body p {
-      font-size: 14px;
-      color: var(--mid);
-      line-height: 1.85;
-      margin-bottom: 22px;
-    }
-
-    .mini-stack {
-      display: grid;
-      gap: 24px;
-    }
-
-    .mini-card {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      overflow: hidden;
-      min-height: 198px;
-    }
-
-    .mini-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .mini-card-body {
-      padding: 24px 24px 26px;
-    }
-
-    .mini-card-body h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 1.25;
-      color: var(--charcoal);
-      margin-bottom: 12px;
-    }
-
-    .mini-card-body p {
-      font-size: 13px;
-      color: var(--mid);
-      line-height: 1.75;
-      margin-bottom: 14px;
-    }
-
-    .btn-card {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--deep-sage);
-      border-bottom: 1.5px solid var(--deep-sage);
-      padding-bottom: 2px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .btn-card:hover {
-      color: var(--dusty-rose);
-      border-color: var(--dusty-rose);
-    }
-
-    .all-posts {
-      padding: 34px 72px 88px;
-      background: var(--warm-white);
-    }
-
-    .section-header {
+    .archive-header {
       display: flex;
       justify-content: space-between;
       gap: 24px;
-      align-items: end;
-      margin-bottom: 36px;
+      align-items: flex-end;
+      margin-bottom: 48px;
     }
 
-    .section-header h2 {
+    .archive-header h2 {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(30px, 3vw, 42px);
       font-weight: 400;
@@ -362,11 +212,21 @@
       color: var(--deep-sage);
     }
 
-    .section-header p {
-      max-width: 520px;
+    .archive-header h2 em { font-style: italic; }
+
+    .archive-header p {
+      max-width: 420px;
       font-size: 14px;
       color: var(--mid);
       line-height: 1.8;
+    }
+
+    .post-count {
+      font-size: 12px;
+      color: var(--light);
+      letter-spacing: 0.08em;
+      margin-top: 6px;
+      display: block;
     }
 
     .blog-grid {
@@ -388,24 +248,47 @@
       box-shadow: 0 14px 40px rgba(44,44,42,0.10);
     }
 
-    .blog-card img {
-      width: 100%;
+    .blog-card-img {
       height: 210px;
-      object-fit: cover;
-      display: block;
+      overflow: hidden;
+      background: var(--blush);
     }
 
-    .blog-card-body {
-      padding: 24px 22px 28px;
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+
+    .blog-card:hover .blog-card-img img { transform: scale(1.04); }
+
+    .blog-card-img-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--blush), var(--border));
+    }
+
+    .blog-card-body { padding: 24px 22px 28px; }
+
+    .meta-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dusty-rose);
+      margin-bottom: 10px;
+      display: block;
     }
 
     .blog-card-body h3 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 400;
       line-height: 1.28;
       color: var(--charcoal);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .blog-card-body p {
@@ -415,6 +298,68 @@
       margin-bottom: 14px;
     }
 
+    .btn-card {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--deep-sage);
+      border-bottom: 1.5px solid var(--deep-sage);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .btn-card:hover { color: var(--dusty-rose); border-color: var(--dusty-rose); }
+
+    /* ── Loading / Error states ── */
+    .blog-status {
+      grid-column: 1 / -1;
+      padding: 56px 0;
+      text-align: center;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--dusty-rose);
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .blog-status p {
+      font-size: 14px;
+      color: var(--light);
+    }
+
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .btn-load-more {
+      background: transparent;
+      border: 1.5px solid var(--deep-sage);
+      color: var(--deep-sage);
+      font-family: 'Jost', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-load-more:hover { background: var(--deep-sage); color: var(--cream); }
+    .btn-load-more:disabled { opacity: 0.4; cursor: default; }
+
+    /* ── Resource strip ── */
     .resource-strip {
       background: var(--blush);
       padding: 72px;
@@ -438,10 +383,8 @@
       line-height: 1.8;
     }
 
-    footer {
-      background: var(--charcoal);
-      padding: 56px 72px 36px;
-    }
+    /* ── Footer ── */
+    footer { background: var(--charcoal); padding: 56px 72px 36px; }
 
     .footer-top {
       display: grid;
@@ -460,12 +403,7 @@
       margin-bottom: 12px;
     }
 
-    .footer-brand p {
-      font-size: 13px;
-      color: rgba(247,243,238,0.45);
-      line-height: 1.7;
-      max-width: 280px;
-    }
+    .footer-brand p { font-size: 13px; color: rgba(247,243,238,0.45); line-height: 1.7; max-width: 280px; }
 
     .footer-col h4 {
       font-size: 11px;
@@ -476,37 +414,16 @@
       margin-bottom: 18px;
     }
 
-    .footer-col ul {
-      list-style: none;
-    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
 
-    .footer-col ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer-col ul a {
-      font-size: 13px;
-      color: rgba(247,243,238,0.5);
-      transition: color 0.2s;
-    }
-
+    .footer-col ul a { font-size: 13px; color: rgba(247,243,238,0.5); transition: color 0.2s; }
     .footer-col ul a:hover { color: var(--cream); }
 
-    .footer-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; }
+    .footer-bottom p { font-size: 12px; color: rgba(247,243,238,0.3); }
 
-    .footer-bottom p {
-      font-size: 12px;
-      color: rgba(247,243,238,0.3);
-    }
-
-    .social-links {
-      display: flex;
-      gap: 16px;
-    }
+    .social-links { display: flex; gap: 16px; }
 
     .social-links a {
       width: 36px;
@@ -521,75 +438,42 @@
       transition: border-color 0.2s, color 0.2s;
     }
 
-    .social-links a:hover {
-      border-color: var(--dusty-rose);
-      color: var(--dusty-rose);
-    }
+    .social-links a:hover { border-color: var(--dusty-rose); color: var(--dusty-rose); }
 
+    /* ── Responsive ── */
     @media (max-width: 1100px) {
-      .featured-grid,
-      .featured-main {
-        grid-template-columns: 1fr;
-      }
-
-      .mini-card {
-        grid-template-columns: 1fr;
-      }
-
-      .blog-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+      .blog-grid { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
-
       .nav-links { display: none; }
 
       .hero,
-      .featured,
-      .all-posts,
+      .archive,
       .resource-strip,
       footer {
         padding-left: 32px;
         padding-right: 32px;
       }
 
-      .hero {
-        padding-top: 72px;
-        padding-bottom: 72px;
-      }
+      .hero { padding-top: 72px; padding-bottom: 72px; }
+      .archive-header { display: block; }
+      .archive-header p { margin-top: 14px; }
 
-      .section-header,
-      .footer-top,
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
 
-      .section-header { display: block; }
-
-      .section-header p { margin-top: 14px; }
-
-      .footer-top { gap: 32px; }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 16px;
-        align-items: flex-start;
-      }
+      .footer-bottom { flex-direction: column; gap: 16px; align-items: flex-start; }
     }
 
     @media (max-width: 700px) {
       .blog-grid { grid-template-columns: 1fr; }
-
-      .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .hero-buttons { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
+
   <nav>
     <a href="/" class="nav-logo">
       <img
@@ -599,7 +483,6 @@
       />
       <div class="nav-logo-text">Home DIYs<br />for Busy Women</div>
     </a>
-
     <ul class="nav-links">
       <li><a href="/work-with-me">Work With Me</a></li>
       <li><a href="/about">About</a></li>
@@ -613,10 +496,10 @@
   <section class="hero">
     <div class="hero-inner">
       <span class="section-eyebrow">Sheri's DIY Blog</span>
-      <h1>Helpful home projects, simple tips, and <em>real-life DIY confidence</em>.</h1>
+      <h1>Practical home projects, simple tips, and <em>real-life DIY confidence</em>.</h1>
       <p>
-        Browse Sheri's practical articles for busy women who want to make progress in their home
-        without turning every project into a full-time job.
+        Browse the full archive of Sheri's articles for busy women who want to make real progress
+        in their home — without turning every project into a full-time job.
       </p>
       <div class="hero-buttons">
         <a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000" class="btn-primary">Take the DIY Quiz</a>
@@ -625,120 +508,28 @@
     </div>
   </section>
 
-  <section class="featured">
-    <div class="featured-grid">
-      <a class="featured-main" href="/blog/how-my-fixer-upper-house-fixed-me">
-        <div class="featured-main-image">
-          <img
-            src="https://static.wixstatic.com/media/682593_2117cbd60ec6486196612c318ae3602a~mv2.jpg"
-            alt="How My Fixer-Upper House Fixed Me"
-          />
-        </div>
-        <div class="featured-main-body">
-          <span class="meta-label">Personal Story</span>
-          <h2>How My Fixer-Upper House Fixed Me</h2>
-          <p>
-            The unexpected story of how buying a run-down house gave me skills, confidence,
-            and a whole new sense of what I'm capable of.
-          </p>
-          <span class="btn-card">Read Article →</span>
-        </div>
-      </a>
-
-      <div class="mini-stack">
-        <a class="mini-card" href="/blog/how-to-hang-wall-art-without-the-stress">
-          <img
-            src="https://static.wixstatic.com/media/d82b14_df83b84406c54da494e97db8166d1c80~mv2.png/v1/fill/w_474,h_474,fp_0.50_0.50,q_95,enc_avif,quality_auto/d82b14_df83b84406c54da494e97db8166d1c80~mv2.webp"
-            alt="How to Hang Wall Art"
-          />
-          <div class="mini-card-body">
-            <span class="meta-label">Most Recent</span>
-            <h3>How to Hang Wall Art Without the Stress</h3>
-            <p>Simple guide for styling your walls with more confidence.</p>
-            <span class="btn-card">Read Article →</span>
-          </div>
-        </a>
-
-        <a class="mini-card" href="/blog/must-have-tools-for-a-beginner-diy-home-makeover-under-100">
-          <img
-            src="https://static.wixstatic.com/media/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg"
-            alt="Must-Have DIY Tools"
-          />
-          <div class="mini-card-body">
-            <span class="meta-label">Popular Post</span>
-            <h3>Must-Have Tools for a Beginner DIY Home Makeover</h3>
-            <p>Start with the essentials and skip the overwhelm.</p>
-            <span class="btn-card">Read Article →</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="all-posts">
-    <div class="section-header">
+  <section class="archive">
+    <div class="archive-header">
       <div>
-        <span class="section-eyebrow">All Posts</span>
-        <h2>Browse all DIY articles</h2>
+        <span class="section-eyebrow">Full Archive</span>
+        <h2>All published posts,<br /><em>newest first</em></h2>
+        <span class="post-count" id="post-count"></span>
       </div>
       <p>
         Practical guides, project walkthroughs, and real-talk advice for women who want to
-        feel at home in their own space.
+        feel at home in their own space. Every post is here — browse at your own pace.
       </p>
     </div>
 
-    <div class="blog-grid">
-      <a href="/blog/how-my-fixer-upper-house-fixed-me" class="blog-card">
-        <img
-          src="https://static.wixstatic.com/media/682593_2117cbd60ec6486196612c318ae3602a~mv2.jpg"
-          alt="How My Fixer-Upper House Fixed Me"
-        />
-        <div class="blog-card-body">
-          <span class="meta-label">Personal Story</span>
-          <h3>How My Fixer-Upper House Fixed Me</h3>
-          <p>How buying a run-down house changed everything about the way I see myself.</p>
-          <span class="btn-card">Read Article →</span>
-        </div>
-      </a>
+    <div class="blog-grid" id="blog-grid">
+      <div class="blog-status">
+        <div class="spinner"></div>
+        <p>Loading posts…</p>
+      </div>
+    </div>
 
-      <a href="/blog/how-to-hang-wall-art-without-the-stress" class="blog-card">
-        <img
-          src="https://static.wixstatic.com/media/d82b14_df83b84406c54da494e97db8166d1c80~mv2.png/v1/fill/w_474,h_474,fp_0.50_0.50,q_95,enc_avif,quality_auto/d82b14_df83b84406c54da494e97db8166d1c80~mv2.webp"
-          alt="How to Hang Wall Art"
-        />
-        <div class="blog-card-body">
-          <span class="meta-label">Most Recent</span>
-          <h3>How to Hang Wall Art Without the Stress</h3>
-          <p>Simple, practical help for styling your walls with more confidence.</p>
-          <span class="btn-card">Read Article →</span>
-        </div>
-      </a>
-
-      <a href="/blog/must-have-tools-for-a-beginner-diy-home-makeover-under-100" class="blog-card">
-        <img
-          src="https://static.wixstatic.com/media/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5f09fb05c3764aedaf4ff859c767d11c~mv2.jpg"
-          alt="Must-Have DIY Tools"
-        />
-        <div class="blog-card-body">
-          <span class="meta-label">Popular Post</span>
-          <h3>Must-Have Tools for a Beginner DIY Home Makeover</h3>
-          <p>What to buy first so you can actually start making progress.</p>
-          <span class="btn-card">Read Article →</span>
-        </div>
-      </a>
-
-      <a href="/blog/how-to-create-a-stunning-feature-wall-in-your-living-room" class="blog-card">
-        <img
-          src="https://static.wixstatic.com/media/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg/v1/fill/w_474,h_474,fp_0.50_0.50,q_90,enc_avif,quality_auto/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg"
-          alt="Feature Wall"
-        />
-        <div class="blog-card-body">
-          <span class="meta-label">Fan Favourite</span>
-          <h3>How to Create a Stunning Feature Wall in Your Living Room</h3>
-          <p>A stylish, confidence-building project with big visual payoff.</p>
-          <span class="btn-card">Read Article →</span>
-        </div>
-      </a>
+    <div class="load-more-wrap" id="load-more-wrap" style="display:none;">
+      <button class="btn-load-more" id="load-more-btn">Load More Posts</button>
     </div>
   </section>
 
@@ -763,7 +554,6 @@
           sheriwalker.ca
         </p>
       </div>
-
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
@@ -774,16 +564,15 @@
           <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>Offers</h4>
         <ul>
           <li><a href="https://sheriwalker-accentwallworkshop.netlify.app/">Accent Wall Workshop</a></li>
           <li><a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000">Take the Quiz</a></li>
+          <li><a href="/blog">Read the Blog</a></li>
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p>© 2025 Sheri Walker · Home DIYs for Busy Women · South Surrey, BC</p>
       <div class="social-links">
@@ -793,5 +582,121 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const BATCH = 12;
+    let allPosts = [];
+    let shown = 0;
+
+    function esc(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function formatDate(iso) {
+      if (!iso) return '';
+      try {
+        return new Date(iso).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+      } catch { return ''; }
+    }
+
+    function getImageUrl(post) {
+      const cm = post.coverMedia;
+      if (!cm) return '';
+      return cm.image?.url || cm.image?.src?.url || cm.url || cm.src?.url || '';
+    }
+
+    function renderCard(post) {
+      const slug = esc(post.slug || '');
+      const title = esc(post.title || 'Untitled');
+      const excerpt = esc(post.excerpt || post.plainContent || '');
+      const date = formatDate(post.publishedDate || post.firstPublishedDate);
+      const imgUrl = getImageUrl(post);
+      const mins = post.minutesToRead;
+
+      const imgHtml = imgUrl
+        ? `<div class="blog-card-img"><img src="${esc(imgUrl)}" alt="${title}" loading="lazy" /></div>`
+        : `<div class="blog-card-img"><div class="blog-card-img-placeholder"></div></div>`;
+
+      const meta = [date, mins ? `${mins} min read` : ''].filter(Boolean).join(' · ');
+
+      return `
+        <a href="/blog/${slug}" class="blog-card">
+          ${imgHtml}
+          <div class="blog-card-body">
+            ${meta ? `<span class="meta-label">${esc(meta)}</span>` : ''}
+            <h3>${title}</h3>
+            ${excerpt ? `<p>${excerpt.substring(0, 120)}${excerpt.length > 120 ? '…' : ''}</p>` : ''}
+            <span class="btn-card">Read Article →</span>
+          </div>
+        </a>`;
+    }
+
+    function renderBatch() {
+      const grid = document.getElementById('blog-grid');
+      const next = allPosts.slice(shown, shown + BATCH);
+      next.forEach(post => {
+        const div = document.createElement('div');
+        div.innerHTML = renderCard(post).trim();
+        grid.appendChild(div.firstChild);
+      });
+      shown += next.length;
+
+      const countEl = document.getElementById('post-count');
+      if (countEl) countEl.textContent = `${allPosts.length} post${allPosts.length !== 1 ? 's' : ''} published`;
+
+      const wrap = document.getElementById('load-more-wrap');
+      const btn = document.getElementById('load-more-btn');
+      if (shown < allPosts.length) {
+        wrap.style.display = 'block';
+        btn.disabled = false;
+      } else {
+        wrap.style.display = 'none';
+      }
+    }
+
+    async function fetchAllPosts() {
+      const grid = document.getElementById('blog-grid');
+      let offset = 0;
+      const limit = 100;
+
+      try {
+        while (true) {
+          const res = await fetch(`/api/wix-posts?limit=${limit}&offset=${offset}`);
+          if (!res.ok) throw new Error(`API error ${res.status}`);
+          const data = await res.json();
+          const batch = data.posts || [];
+          allPosts = allPosts.concat(batch);
+
+          const total = data.metaData?.total ?? data.paging?.total ?? allPosts.length;
+          if (batch.length < limit || allPosts.length >= total) break;
+          offset += limit;
+        }
+
+        grid.innerHTML = '';
+
+        if (!allPosts.length) {
+          grid.innerHTML = '<div class="blog-status"><p>No posts found.</p></div>';
+          return;
+        }
+
+        renderBatch();
+
+        document.getElementById('load-more-btn').addEventListener('click', () => {
+          renderBatch();
+        });
+
+      } catch (err) {
+        grid.innerHTML = `<div class="blog-status"><p>Could not load posts. Please check back soon.</p></div>`;
+        console.error('Failed to load posts:', err);
+      }
+    }
+
+    fetchAllPosts();
+  </script>
+
 </body>
 </html>
