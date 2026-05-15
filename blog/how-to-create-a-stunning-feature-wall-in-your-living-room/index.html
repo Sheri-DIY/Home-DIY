@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Create a Stunning Feature Wall in Your Living Room | Sheri Walker</title>
+  <meta
+    name="description"
+    content="A simple, high-impact project that transforms a room — how to design, prep, and paint a feature wall that looks like you hired someone to do it."
+  />
+  <link rel="canonical" href="https://sheriwalker.ca/blog/how-to-create-a-stunning-feature-wall-in-your-living-room" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F7F3EE;
+      --warm-white: #FDFAF6;
+      --sage: #6B7F6E;
+      --deep-sage: #3D5240;
+      --dusty-rose: #C4897A;
+      --blush: #EDD5CC;
+      --gold: #B89A6A;
+      --charcoal: #2C2C2A;
+      --mid: #5A5A56;
+      --light: #9A9690;
+      --border: #E0D9D1;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--warm-white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-logo-mark { width: 56px; height: 56px; object-fit: contain; display: block; }
+
+    .nav-logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 15px;
+      font-style: italic;
+      color: var(--deep-sage);
+      line-height: 1.3;
+      font-weight: 400;
+    }
+
+    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover, .nav-links a.active { color: var(--deep-sage); }
+
+    .nav-cta {
+      background: var(--deep-sage) !important;
+      color: var(--cream) !important;
+      padding: 10px 22px;
+      border-radius: 2px;
+      font-weight: 500 !important;
+    }
+
+    .nav-cta:hover { background: var(--sage) !important; }
+
+    .post-hero {
+      background: var(--deep-sage);
+      padding: 72px 72px 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .post-hero::before {
+      content: '';
+      position: absolute;
+      right: -90px;
+      top: -90px;
+      width: 320px;
+      height: 320px;
+      border: 60px solid rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+
+    .post-hero-inner { position: relative; z-index: 2; max-width: 800px; }
+
+    .breadcrumb {
+      font-size: 12px;
+      color: rgba(247,243,238,0.5);
+      margin-bottom: 20px;
+      letter-spacing: 0.06em;
+    }
+
+    .breadcrumb a { color: rgba(247,243,238,0.5); transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--cream); }
+    .breadcrumb span { margin: 0 8px; }
+
+    .post-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    .post-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.08;
+      color: var(--cream);
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
+
+    .post-hero h1 em { font-style: italic; color: var(--blush); }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 12px;
+      color: rgba(247,243,238,0.5);
+      letter-spacing: 0.06em;
+    }
+
+    .post-meta .author { display: flex; align-items: center; gap: 8px; }
+
+    .author-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--dusty-rose);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13px;
+      font-style: italic;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .post-featured-image { width: 100%; max-height: 560px; overflow: hidden; background: var(--blush); }
+    .post-featured-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .post-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 64px;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 72px 72px 88px;
+    }
+
+    .post-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--deep-sage);
+      margin-top: 48px;
+      margin-bottom: 20px;
+    }
+
+    .post-content h2 em { font-style: italic; }
+
+    .post-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--charcoal);
+      margin-top: 36px;
+      margin-bottom: 14px;
+    }
+
+    .post-content p { font-size: 16px; color: var(--mid); line-height: 1.9; margin-bottom: 22px; }
+    .post-content p strong { color: var(--charcoal); font-weight: 500; }
+
+    .post-content .pull-quote {
+      border-left: 3px solid var(--dusty-rose);
+      padding: 24px 32px;
+      margin: 40px 0;
+      background: var(--warm-white);
+    }
+
+    .post-content .pull-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-style: italic;
+      color: var(--deep-sage);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .post-content ul { margin: 0 0 22px 22px; }
+    .post-content ul li { font-size: 16px; color: var(--mid); line-height: 1.8; margin-bottom: 8px; }
+
+    .step-block {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 20px;
+      margin: 32px 0;
+      align-items: start;
+    }
+
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--blush);
+      line-height: 1;
+    }
+
+    .step-body h3 { margin-top: 0; }
+
+    .post-sidebar { align-self: start; position: sticky; top: 96px; }
+
+    .sidebar-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+
+    .sidebar-card h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--deep-sage);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .sidebar-card h4 em { font-style: italic; }
+    .sidebar-card p { font-size: 13px; color: var(--mid); line-height: 1.75; margin-bottom: 18px; }
+
+    .btn-primary {
+      background: var(--dusty-rose);
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 13px 22px;
+      border-radius: 2px;
+      display: inline-block;
+      transition: background 0.2s, transform 0.2s;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-primary:hover { background: #b5705f; transform: translateY(-1px); }
+
+    .sidebar-eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--dusty-rose);
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .sidebar-post-list { list-style: none; }
+    .sidebar-post-list li { border-bottom: 1px solid var(--border); padding: 12px 0; }
+    .sidebar-post-list li:last-child { border-bottom: none; }
+
+    .sidebar-post-list a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.3;
+      transition: color 0.2s;
+    }
+
+    .sidebar-post-list a:hover { color: var(--deep-sage); }
+
+    .post-footer-cta { background: var(--blush); padding: 72px; text-align: center; border-top: 1px solid #DFC8BE; }
+
+    .post-footer-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 400;
+      color: var(--deep-sage);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .post-footer-cta h2 em { font-style: italic; }
+    .post-footer-cta p { font-size: 15px; color: var(--mid); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    footer { background: var(--charcoal); padding: 56px 72px 36px; }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 32px;
+    }
+
+    .footer-brand h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-style: italic; color: var(--cream); margin-bottom: 12px; }
+    .footer-brand p { font-size: 13px; color: rgba(247,243,238,0.45); line-height: 1.7; max-width: 280px; }
+    .footer-col h4 { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul a { font-size: 13px; color: rgba(247,243,238,0.5); transition: color 0.2s; }
+    .footer-col ul a:hover { color: var(--cream); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; }
+    .footer-bottom p { font-size: 12px; color: rgba(247,243,238,0.3); }
+    .social-links { display: flex; gap: 16px; }
+    .social-links a { width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; color: rgba(247,243,238,0.5); transition: border-color 0.2s, color 0.2s; }
+    .social-links a:hover { border-color: var(--dusty-rose); color: var(--dusty-rose); }
+
+    @media (max-width: 1000px) { .post-layout { grid-template-columns: 1fr; padding: 56px 48px; } .post-sidebar { position: static; } .step-block { grid-template-columns: 1fr; } .step-num { display: none; } }
+
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .post-hero, .post-layout, .post-footer-cta, footer { padding-left: 32px; padding-right: 32px; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">
+      <img
+        src="https://static.wixstatic.com/media/682593_5325c7b149d3458e91f263bf4bc3a91e~mv2.png"
+        alt="Sheri Walker Logo"
+        class="nav-logo-mark"
+      />
+      <div class="nav-logo-text">Home DIYs<br />for Busy Women</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/work-with-me">Work With Me</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="https://sheriwalker-accentwallworkshop.netlify.app/" class="nav-cta">Workshop →</a></li>
+    </ul>
+  </nav>
+
+  <section class="post-hero">
+    <div class="post-hero-inner">
+      <p class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <a href="/blog">Blog</a>
+        <span>/</span>
+        How to Create a Stunning Feature Wall in Your Living Room
+      </p>
+      <span class="post-label">Feature Wall · Fan Favourite</span>
+      <h1>How to Create a <em>Stunning Feature Wall</em> in Your Living Room</h1>
+      <div class="post-meta">
+        <div class="author">
+          <div class="author-avatar">S</div>
+          <span>Sheri Walker</span>
+        </div>
+        <span>·</span>
+        <span>8 min read</span>
+        <span>·</span>
+        <span>South Surrey, BC</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="post-featured-image">
+    <img
+      src="https://static.wixstatic.com/media/d82b14_5a23f651dd9043c1a8987abef67c96be~mv2.jpg"
+      alt="A bold, beautifully painted feature wall in a living room"
+    />
+  </div>
+
+  <div class="post-layout">
+    <article class="post-content">
+
+      <p>
+        If there is one project I recommend to almost every woman I work with, it's this one.
+        A feature wall — also called an accent wall — is single-wall painting that creates a
+        focal point in a room. It's bold, it's intentional, and it transforms the way a space
+        feels from the moment you walk in.
+      </p>
+
+      <p>
+        It's also, I want to be clear, one of the most beginner-friendly painting projects
+        you can do. You're painting one wall. You're not matching the rest of the room, you're
+        not worrying about a second coat on every surface, and the impact-to-effort ratio is
+        genuinely one of the best in home improvement.
+      </p>
+
+      <p>
+        Here's how I walk clients through it — from choosing the wall to the final reveal.
+      </p>
+
+      <h2>Step 1: <em>Choose the right wall</em></h2>
+
+      <div class="step-block">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <p>
+            Not every wall works equally well as a feature wall. The best candidates are:
+          </p>
+          <ul>
+            <li><strong>The wall you see when you walk into the room</strong> — this is the natural focal point and draws the eye immediately</li>
+            <li><strong>The wall behind your sofa or main seating</strong> — it frames the whole living area and anchors the furniture</li>
+            <li><strong>A wall with architectural interest</strong> — one with a fireplace, a nook, or built-in shelving</li>
+          </ul>
+          <p>
+            Avoid the TV wall if possible — it tends to compete with the screen and fragments the room's
+            visual focus. And avoid walls broken up by lots of small windows or doors; you want a clean
+            canvas.
+          </p>
+        </div>
+      </div>
+
+      <h2>Step 2: <em>Pick a colour with confidence</em></h2>
+
+      <div class="step-block">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <p>
+            This is where most people freeze, and I completely understand why. The colour you
+            choose needs to work with your existing furniture, flooring, and the light in the room —
+            and paint looks dramatically different on a wall than it does on a tiny chip at the store.
+          </p>
+
+          <div class="pull-quote">
+            <p>"Go bolder than you think. The number one thing I hear after a feature wall is done is: 'I wish I'd gone darker.' You can always go lighter next time."</p>
+          </div>
+
+          <p>A few practical tips:</p>
+          <ul>
+            <li><strong>Get samples</strong> — buy 2–3 small pots and paint large swatches (at least 12x12 inches) directly on the wall. Live with them for 24 hours before deciding.</li>
+            <li><strong>Test in both natural and artificial light</strong> — paint looks completely different at 10am versus 8pm. A warm grey can look purple at night; a cool blue can look almost white in bright sun.</li>
+            <li><strong>Look at what's already in the room</strong> — the undertones in your sofa, rug, or flooring will either harmonize with or fight your wall colour. Pull from those.</li>
+            <li><strong>Deep colours often work better than you expect</strong> — navy, forest green, charcoal, deep terracotta — these add warmth and drama without making a room feel small, especially if you have good lighting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Step 3: <em>Prep the wall properly</em></h2>
+
+      <div class="step-block">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <p>Prep is the step most beginners skip — and it's the most important one. A feature wall
+          in a fresh colour shows every imperfection, so the time you spend here pays off ten-fold
+          when the colour goes on.</p>
+          <ul>
+            <li><strong>Fill any holes or dents</strong> with lightweight spackle. Let it dry completely, then sand smooth.</li>
+            <li><strong>Wipe down the wall</strong> with a damp cloth to remove dust and grease (especially near light switches).</li>
+            <li><strong>Tape the edges</strong> — use FrogTape or good-quality painter's tape along the trim, ceiling, and where the wall meets adjacent walls. Press it down firmly.</li>
+            <li><strong>Prime if needed</strong> — if you're going from a light to a very dark colour, or painting over a bold existing colour, one coat of tinted primer will cut down how many coats of the final colour you need.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Step 4: <em>Paint it</em></h2>
+
+      <div class="step-block">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <p>
+            The actual painting is the most satisfying part — and also the most forgiving. Here's
+            the order I always do it in:
+          </p>
+          <ul>
+            <li><strong>Cut in first</strong> — use your 2-inch angled brush to paint a 2-3 inch band around all edges (corners, ceiling, trim). Take your time here. The crisper this is, the more professional the whole wall looks.</li>
+            <li><strong>Roll the field</strong> — use a 9-inch roller in a "W" or "M" pattern to avoid roller marks and ensure even coverage. Work in sections from top to bottom.</li>
+            <li><strong>First coat</strong> — don't stress if it looks patchy. It almost always does on the first coat. Let it dry fully (usually 2 hours).</li>
+            <li><strong>Second coat</strong> — this is where the colour blooms and the finish becomes what you imagined. Two coats is almost always enough, even for deep colours with a good quality paint.</li>
+          </ul>
+          <p>
+            Remove the painter's tape while the paint is still slightly damp — not fully dry. Pulling
+            it off wet gives you a much cleaner edge.
+          </p>
+        </div>
+      </div>
+
+      <h2>Want to <em>take it further?</em></h2>
+
+      <p>
+        A solid colour feature wall is beautiful on its own — but if you want to add more texture
+        or dimension, here are some ideas I've worked on with clients:
+      </p>
+
+      <ul>
+        <li><strong>Limewash paint</strong> — creates a soft, layered, slightly aged look. Works beautifully in living rooms and bedrooms. Venetian plaster and limewash techniques are trending right now and easier to DIY than most people think.</li>
+        <li><strong>Geometric tape pattern</strong> — use painter's tape to create a geometric design (herringbone, chevron, or simple rectangles), paint the field, remove the tape to reveal clean lines. No artistic skill required — just precise taping.</li>
+        <li><strong>DIY board and batten effect</strong> — install simple MDF strips in a grid pattern (or just vertically), paint the whole wall the same colour, and you get a classic wainscoting look for a fraction of the cost.</li>
+        <li><strong>Wallpaper on a single wall</strong> — if paint isn't calling to you, peel-and-stick wallpaper has come a long way. It's renter-friendly, achievable in an afternoon, and completely removable.</li>
+      </ul>
+
+      <h2>The whole point</h2>
+
+      <p>
+        A feature wall is one of the fastest ways to make your home feel curated, intentional,
+        and completely yours — without a renovation budget and without needing any experience.
+        It's also a project you can do on a Saturday afternoon. The materials cost less than most
+        candles at Restoration Hardware, and the result lasts years.
+      </p>
+
+      <p>
+        If you've been thinking about an accent wall and you're not sure where to start,
+        <strong>I run a 60-minute virtual workshop — Accent Wall Made Easy — that walks you through
+        my exact four-step process</strong>, including how to choose your colour, how to prep, and
+        how to paint like you've done it before.
+      </p>
+
+      <p>
+        You'll walk away from that workshop ready to do it yourself, that weekend.
+        Come join us — it's one of the most practical hours you'll spend on your home.
+      </p>
+
+      <p style="margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 14px; color: var(--light);">
+        — Sheri Walker · South Surrey, BC
+      </p>
+
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card" style="background: var(--deep-sage); border-color: var(--deep-sage);">
+        <span class="sidebar-eyebrow" style="color: var(--gold);">Virtual Workshop</span>
+        <h4 style="color: var(--cream);">Accent Wall Made Easy — <em>join the next session</em></h4>
+        <p style="color: rgba(247,243,238,0.65);">
+          A 60-minute workshop where Sheri walks you through her 4-step process live.
+        </p>
+        <a href="https://sheriwalker-accentwallworkshop.netlify.app/" class="btn-primary">Register — $40</a>
+      </div>
+
+      <div class="sidebar-card">
+        <span class="sidebar-eyebrow">More Posts</span>
+        <ul class="sidebar-post-list">
+          <li><a href="/blog/how-my-fixer-upper-house-fixed-me">How My Fixer-Upper House Fixed Me</a></li>
+          <li><a href="/blog/how-to-hang-wall-art-without-the-stress">How to Hang Wall Art Without the Stress</a></li>
+          <li><a href="/blog/must-have-tools-for-a-beginner-diy-home-makeover-under-100">Must-Have Tools for a Beginner DIY Makeover</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <span class="sidebar-eyebrow">Not Sure Where to Start?</span>
+        <h4>Take the <em>DIY Quiz</em></h4>
+        <p>Find out which project is the right first step for your home and your confidence level.</p>
+        <a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000" class="btn-primary">Take the Quiz</a>
+      </div>
+    </aside>
+  </div>
+
+  <section class="post-footer-cta">
+    <h2>Ready to do <em>your own</em> accent wall?</h2>
+    <p>
+      Join Sheri's virtual workshop and tackle your feature wall this weekend — with step-by-step
+      guidance, a workbook, and live Q&amp;A.
+    </p>
+    <a href="https://sheriwalker-accentwallworkshop.netlify.app/" class="btn-primary" style="display:inline-block; width: auto; padding: 16px 40px;">Join the Workshop</a>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Home DIYs for Busy Women</h3>
+        <p>Helping busy women in South Surrey, BC create a home they love — one DIY project at a time.</p>
+        <br />
+        <p style="font-size:12px; color:rgba(247,243,238,0.35);">
+          hello@sheriwalker.ca · 604-880-2303<br />
+          sheriwalker.ca
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/work-with-me">Work With Me</a></li>
+          <li><a href="/about">Meet Sheri</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Offers</h4>
+        <ul>
+          <li><a href="https://sheriwalker-accentwallworkshop.netlify.app/">Accent Wall Workshop</a></li>
+          <li><a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000">Take the Quiz</a></li>
+          <li><a href="/blog">Read the Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sheri Walker · Home DIYs for Busy Women · South Surrey, BC</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/sheriwalker_DIY" title="Instagram">In</a>
+        <a href="https://ca.pinterest.com/sheriwalker_DIY/" title="Pinterest">Pi</a>
+        <a href="https://www.facebook.com/profile.php?id=61573506176220" title="Facebook">Fb</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
