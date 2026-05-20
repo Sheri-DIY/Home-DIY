@@ -116,6 +116,57 @@
       background: var(--sage) !important;
     }
 
+    .nav-quiz-cta {
+      background: var(--dusty-rose) !important;
+      color: white !important;
+      padding: 10px 22px;
+      border-radius: 2px;
+      font-weight: 600 !important;
+    }
+
+    .nav-quiz-cta:hover {
+      background: #b5705f !important;
+    }
+
+    .top-quiz-bar {
+      background: var(--blush);
+      color: var(--deep-sage);
+      border-bottom: 1px solid #DFC8BE;
+      padding: 10px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .top-quiz-bar strong {
+      font-weight: 600;
+      color: var(--charcoal);
+    }
+
+    .top-quiz-bar a {
+      background: var(--deep-sage);
+      color: var(--cream);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .top-quiz-bar a:hover {
+      background: var(--sage);
+      transform: translateY(-1px);
+    }
+
     .hero {
       min-height: 92vh;
       display: grid;
@@ -1055,6 +1106,18 @@
     .hero-buttons { animation-delay: 0.55s; }
 
     @media (max-width: 900px) {
+      .top-quiz-bar {
+        padding: 12px 24px;
+        flex-direction: column;
+        gap: 8px;
+        line-height: 1.35;
+      }
+
+      .top-quiz-bar a {
+        width: 100%;
+        max-width: 260px;
+      }
+
       nav {
         padding: 0 24px;
       }
@@ -1123,6 +1186,11 @@
 </head>
 <body>
 
+  <div class="top-quiz-bar">
+    <span><strong>Not sure where to start?</strong> Take Sheri's quick DIY quiz and get pointed to the right next step.</span>
+    <a href="https://quiz.sheriwalker.ca/diy-quiz-page">Take the Quiz →</a>
+  </div>
+
   <nav>
     <a href="/" class="nav-logo">
       <img
@@ -1133,6 +1201,7 @@
       <div class="nav-logo-text">Home DIYs<br />for Busy Women</div>
     </a>
     <ul class="nav-links">
+      <li><a href="https://quiz.sheriwalker.ca/diy-quiz-page" class="nav-quiz-cta">Take the Quiz →</a></li>
       <li><a href="/work-with-me">Work With Me</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/blog">Blog</a></li>
@@ -1150,7 +1219,8 @@
         No experience needed. No contractor required.
       </p>
       <div class="hero-buttons">
-        <a href="https://sheriwalker-accentwallworkshop.netlify.app/" class="btn-primary">Join the Workshop</a>
+        <a href="https://quiz.sheriwalker.ca/diy-quiz-page" class="btn-primary">Take the DIY Quiz</a>
+        <a href="https://sheriwalker-accentwallworkshop.netlify.app/" class="btn-secondary">Join the Workshop</a>
         <a href="/work-with-me" class="btn-secondary">See How It Works</a>
       </div>
     </div>
@@ -1447,7 +1517,7 @@
           <li><a href="/work-with-me">In-Home Training</a></li>
           <li><a href="https://sheriwalker-accentwallworkshop.netlify.app/">Accent Wall Workshop</a></li>
           <li><a href="/contact">Course Waitlist</a></li>
-          <li><a href="https://app.formwise.ai/form_single/1775069567739x908848826981548000">Take the Quiz</a></li>
+          <li><a href="https://quiz.sheriwalker.ca/diy-quiz-page">Take the Quiz</a></li>
         </ul>
       </div>
 
